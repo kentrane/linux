@@ -6,6 +6,8 @@
 #include <linux/mutex.h>
 #include <linux/of.h>
 
+#define pwm_apply_state(pwm, state) pwm_apply_might_sleep(pwm, state)
+
 struct pwm_chip;
 
 /**
